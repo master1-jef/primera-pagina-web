@@ -1,0 +1,152 @@
+/* Estilos generales del cuerpo y el encabezado */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #333;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilos del menú de navegación */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li a:hover,
+.menu li .dropdown-content a:hover {
+    background-color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+section h2 {
+    color: #333;
+}
+
+section p {
+    color: #666;
+}
+
+/* Estilos del slider de juegos */
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 200px; /* Ajusta el tamaño de las imágenes según sea necesario */
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.slider-btn.left {
+    left: 0;
+}
+
+.slider-btn.right {
+    right: 0;
+}
+
+/* Estilos para el juego destacado */
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.game img {
+    width: 900px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    border-radius: 10px;
+}
+
+.game a {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.game a:hover {
+    background-color: #555;
+}
